@@ -1,38 +1,231 @@
 .App {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+}
+
+/* BG GIF */
+/* .gif {
+  width: 100%;
+  height: auto;
+} */
+
+/* COLUMNS */
+.left-col, .right-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.right-col {
+  background-color: black;
+  flex: 6;
+  background-image: url("./assets/morphballs.gif");
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-container {
+  margin: auto;
+  width: 95%;
+  height: auto;
+}
+
+.left-col {
+  justify-content: space-between;
+  background-color: black;
+  flex: 5;
+  transition: 0.3s;
+}
+
+.active-nav {
+  flex: 2;
+  background-color: #141414;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 52px;
+}
+
+/* TEXT */
+h1 {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .90;
+  margin-left: -2px;
+}
+
+h2 {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.9;
+  margin: 0;
+  transition: 0.3s;
+}
+
+h3 {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
   text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.95;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h6 {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.75;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* NAV LINKS */
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 36px;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.line-sm {
+  width: 30px;
+  height: 4px;
+  background-color:#fff;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.link:hover h2 {
+    font-size: 28px;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.link:hover .line-sm {
+  width: 50px;
+  background-color: #FA3440;
+}
+
+.selected .line-sm {
+  width: 100px;
+  background-color: #FA3440;
+}
+
+.selected h2 {
+  font-size: 28px;
+  opacity: 1;
+  font-weight: 700;
+  margin-top: 28px;
+}
+
+/* SOCIAL */
+.social {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-links > img {
+  height: 32px;
+  width: auto;
+  margin: 8px 24px 0px 0px;
+}
+/* PHOTOGRAPHY */
+.gallery-container {
+  width: 100%;
+  height: auto;
+}
+
+/* CTA */
+.cta {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cta > a {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 160px;
+  height: 50px;
+  color: #fff;
+  opacity: .9;
+  background: #ee295a;
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ACTING SECTION */
+.video-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.video-list h6 {
+  margin: 0px 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+
+.video-list h3 {
+  margin: 14px 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  opacity: 0.90;
+  cursor: pointer;
 }
