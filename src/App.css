@@ -94,7 +94,7 @@ h3 {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fff;
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 h6 {
@@ -150,6 +150,11 @@ h6 {
   opacity: 1;
   font-weight: 700;
   margin-top: 28px;
+}
+
+.selected-video {
+  font-weight: 700;
+  opacity: 1;
 }
 
 /* SOCIAL */

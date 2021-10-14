@@ -1,7 +1,7 @@
 import React from "react";
 import { SocialLinks } from "./SocialLinks";
 
-export function Nav({ videoState, setVideoState, state, links }) {
+export function Nav({ state, links, videoTitles }) {
   return (
     <>
       <div className={state === "" ? "left-col" : "left-col active-nav"}>
@@ -36,10 +36,7 @@ export function Nav({ videoState, setVideoState, state, links }) {
               {[links[1]]}
               <div className="video-list">
                 <h6>Video Selection</h6>
-                <h3 onClick={() => setVideoState("1")}>Video 1</h3>
-                <h3 onClick={() => setVideoState("2")}>Video 2</h3>
-                <h3 onClick={() => setVideoState("3")}>Video 3</h3>
-                <h3 onClick={() => setVideoState("4")}>Video 4</h3>
+                {videoTitles}
               </div>
               <div className="nav-links">{[links[0], links[2]]}</div>
             </>
