@@ -31,7 +31,7 @@
 
 .content-container {
   margin: auto;
-  width: 95%;
+  width: 90%;
   height: auto;
 }
 
@@ -85,8 +85,7 @@ h2 {
 
 h3 {
   font-family: Jost;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   /* identical to box height */
@@ -121,6 +120,14 @@ h6 {
     cursor: pointer;
 }
 
+.link-underline {
+    width: 30px;
+    height: 4px;
+    background-color:#fff;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
 .line-sm {
   width: 30px;
   height: 4px;
@@ -150,11 +157,6 @@ h6 {
   opacity: 1;
   font-weight: 700;
   margin-top: 28px;
-}
-
-.selected-video {
-  font-weight: 700;
-  opacity: 1;
 }
 
 /* SOCIAL */
@@ -231,6 +233,21 @@ h6 {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.06em;
-  opacity: 0.90;
+  opacity: 0.85;
   cursor: pointer;
+}
+
+.acting-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.acting-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
