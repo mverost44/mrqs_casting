@@ -20,8 +20,8 @@ function App() {
 
   const videoTitles = [
     { title: "Monologue", id: "AWwpjbDFOzk" },
-    { title: "blah", id: "AWwpjbDFOzk" },
-    { title: "bloo", id: "AWwpjbDFOzk" },
+    { title: "Comedic", id: "z1NE26GXZCo" },
+    { title: "Cute", id: "2sq1ZXUfgSA" },
   ].map((video) => (
     <VideoTitle
       id={video.id}

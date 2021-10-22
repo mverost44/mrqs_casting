@@ -251,3 +251,17 @@ h6 {
   width: 100%;
   height: 100%;
 }
+
+/* CASTING PAGE */
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logos > a, img {
+  width: 30%;
+  height: auto;
+}
