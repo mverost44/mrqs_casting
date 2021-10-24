@@ -17,12 +17,6 @@ import Gallery from "react-grid-gallery";
 
 const IMAGES = [
   {
-    src: "https://maxverost.s3.amazonaws.com/headshots/andre.jpg",
-    thumbnail: "https://maxverost.s3.amazonaws.com/headshots/andre.jpg",
-    thumbnailWidth: "33%",
-    thumbnailHeight: "auto",
-  },
-  {
     src: "https://maxverost.s3.amazonaws.com/headshots/Cityheadshots-19.jpg",
     thumbnail:
       "https://maxverost.s3.amazonaws.com/headshots/Cityheadshots-19.jpg",
@@ -40,6 +34,12 @@ const IMAGES = [
     src: "https://maxverost.s3.amazonaws.com/headshots/Cityheadshots-9.jpg",
     thumbnail:
       "https://maxverost.s3.amazonaws.com/headshots/Cityheadshots-9.jpg",
+    thumbnailWidth: "33%",
+    thumbnailHeight: "auto",
+  },
+  {
+    src: "https://maxverost.s3.amazonaws.com/headshots/andre.jpg",
+    thumbnail: "https://maxverost.s3.amazonaws.com/headshots/andre.jpg",
     thumbnailWidth: "33%",
     thumbnailHeight: "auto",
   },

@@ -15,9 +15,6 @@ export function Casting() {
         <a href="https://mrqswhly.dropmark.com/1086100" target="_blank">
           <img src={vogue} alt="vogue portugal cover" />
         </a>
-        <a href="https://mrqswhly.dropmark.com/1086099" target="_blank">
-          <img src={buffzine} alt="Buffalo Zine Logo" />
-        </a>
         <a href="https://www.youtube.com/watch?v=4pK-A1SHMuE&list=PLu5lFK9e1eQZM5vYxrTlXCpmnQqJQ3erb" target="_blank">
           <img src={athena} alt="Athena logo" />
         </a>
