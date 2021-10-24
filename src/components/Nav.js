@@ -45,6 +45,7 @@ export function Nav({ state, links, videoTitles }) {
           {state === "Casting" && (
             <>
               {[links[2]]}
+              <p>Click on a project logo for more details</p>
               <div className="nav-links">{[links[0], links[1]]}</div>
             </>
           )}

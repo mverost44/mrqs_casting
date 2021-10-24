@@ -57,13 +57,6 @@ const IMAGES = [
     thumbnailHeight: "auto",
   },
   {
-    src: "https://maxverost.s3.amazonaws.com/headshots/Wennieswchin%40gmail.com07.jpg",
-    thumbnail:
-      "https://maxverost.s3.amazonaws.com/headshots/Wennieswchin%40gmail.com07.jpg",
-    thumbnailWidth: "33%",
-    thumbnailHeight: "auto",
-  },
-  {
     src: "https://maxverost.s3.amazonaws.com/headshots/Wennieswchin%40gmail.com03.jpg",
     thumbnail:
       "https://maxverost.s3.amazonaws.com/headshots/Wennieswchin%40gmail.com03.jpg",

@@ -6,6 +6,7 @@ import { Nav } from "./components/Nav";
 import { Photography } from "./components/Photography";
 import { Acting } from "./components/Acting";
 import { Casting } from "./components/Casting";
+import closeIcon from "./assets/close_icon.svg";
 
 function App() {
   const [state, setState] = useState("");
@@ -50,6 +51,11 @@ function App() {
           {state === "Casting" && <Casting />}
         </div>
       </div>
+      { state != "" &&
+        <div className="close-icon" onClick={() => setState("")}>
+          <img src={closeIcon} alt="close icon" />
+        </div>
+      }
     </div>
   );
 }
